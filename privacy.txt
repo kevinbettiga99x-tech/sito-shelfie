@@ -1,0 +1,24 @@
+🇮🇹 Italiano: Informativa sulla Privacy
+Ultimo aggiornamento: 23 Aprile 2026
+
+L'applicazione Shelfie è stata progettata pensando alla massima privacy dell'utente.
+
+Nessuna raccolta dati: L'App non raccoglie, non memorizza e non trasmette alcun dato personale (come nome, email, posizione o contatti) a server esterni o terze parti.
+
+Archiviazione Locale: Tutti i dati creati o inseriti nell'App (come liste di libri o note) sono salvati esclusivamente nella memoria locale del tuo dispositivo. Lo sviluppatore non ha accesso a queste informazioni.
+
+Permessi: Eventuali permessi richiesti (come l'accesso alla fotocamera per la scansione) servono unicamente al funzionamento tecnico delle funzioni dell'App sul dispositivo. Nessuna immagine o file viene trasmesso all'esterno.
+
+
+
+🇬🇧 English: Privacy Policy
+Last Updated: April 23, 2026
+
+The Shelfie app is built with user privacy as a top priority.
+
+No Data Collection: The App does not collect, store, or transmit any personally identifiable information (such as name, email, location, or contacts) to any external servers or third parties.
+
+Local Storage: All data created or entered within the App (such as book lists or notes) is stored exclusively on your device's local memory. The developer has no access to this information.
+
+Permissions: Any permissions requested (such as camera access for scanning) are used solely for the technical functionality of the App's features on your device. No images or files are transmitted externally.
+
