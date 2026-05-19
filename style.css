@@ -1,6 +1,8 @@
 :root {
-    --primary: #7C3AED; /* Un viola moderno, in linea con l'AppTheme.purple del codice */
+    --primary: #7C3AED;
     --primary-light: #F5F3FF;
+    --secondary: #FF6B2B;
+    --secondary-light: #FFF4EF;
     --text-main: #111827;
     --text-muted: #4B5563;
     --bg-main: #F9FAFB;
@@ -29,6 +31,8 @@ body {
     padding: 0 24px;
 }
 
+/* ─── HERO ─────────────────────────────────────── */
+
 .hero {
     text-align: center;
     padding: 100px 20px 80px;
@@ -52,6 +56,167 @@ body {
     margin: 0 auto;
 }
 
+/* Portfolio hero variant */
+.hero--portfolio h1 {
+    font-size: 4rem;
+}
+
+.dev-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border: 1px solid #DDD6FE;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+}
+
+/* ─── SECTION HEADER ────────────────────────────── */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* ─── APP CARDS (portfolio) ─────────────────────── */
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 32px;
+    margin-bottom: 100px;
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 36px 32px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.app-card:hover .app-link {
+    color: var(--primary);
+}
+
+.app-card__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.app-card__header--purple { border-color: #DDD6FE; }
+.app-card__header--orange { border-color: #FED7AA; }
+
+.app-card:hover.app-card--purple,
+.app-card:has(.app-card__header--purple):hover {
+    border-color: var(--primary);
+}
+
+.app-card:has(.app-card__header--orange):hover {
+    border-color: var(--secondary);
+}
+
+.app-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.app-card__header--purple .app-icon {
+    background-color: var(--primary-light);
+}
+
+.app-card__header--orange .app-icon {
+    background-color: var(--secondary-light);
+}
+
+.app-card__header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.app-platform {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.app-card__desc {
+    flex: 1;
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.app-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.tag {
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tag--purple {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.tag--orange {
+    background-color: var(--secondary-light);
+    color: var(--secondary);
+}
+
+.app-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+/* ─── FEATURE CARDS (app pages) ─────────────────── */
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -70,7 +235,7 @@ body {
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.05), 0 4px 8px -4px rgba(0, 0, 0, 0.025);
-    border-color: var(--primary);
+    border-color: var(--card-accent, var(--primary));
 }
 
 .card .icon {
@@ -80,7 +245,7 @@ body {
     width: 56px;
     height: 56px;
     border-radius: 12px;
-    background-color: var(--primary-light);
+    background-color: var(--card-icon-bg, var(--primary-light));
     font-size: 28px;
     margin-bottom: 24px;
 }
@@ -97,6 +262,29 @@ body {
     font-size: 1rem;
     color: var(--text-muted);
 }
+
+/* ─── BACK LINK ─────────────────────────────────── */
+
+.back-nav {
+    padding: 24px 0 0;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--text-main);
+}
+
+/* ─── FOOTER ─────────────────────────────────────── */
 
 footer {
     text-align: center;

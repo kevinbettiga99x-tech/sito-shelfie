@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFlow — Gestione magazzino mobile e web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* StockFlow usa l'arancio come accento */
+        .hero { --hero-accent: var(--secondary); }
+        .card { --card-accent: var(--secondary); --card-icon-bg: var(--secondary-light); }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="index.html" class="back-link">← Torna al portfolio</a>
+            </nav>
+            <h1>StockFlow</h1>
+            <p class="subtitle">Gestione magazzino dual-platform per piccole imprese. Disponibile come app Flutter per mobile e come web app React per desktop.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="features-grid">
+            <div class="card">
+                <div class="icon">📦</div>
+                <h2>Gestione Inventario</h2>
+                <p>Organizza i prodotti per categoria e sottocategoria. Imposta quantità minime per ricevere avvisi automatici di riordino prima che le scorte si esauriscano.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔄</div>
+                <h2>Movimenti Stock</h2>
+                <p>Registra carichi, scarichi, riordini e perdite in pochi tocchi. La dashboard mostra gli ultimi movimenti in tempo reale con data, tipo e quantità.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📊</div>
+                <h2>Report Avanzati</h2>
+                <p>Grafici aggiornati in tempo reale: andamento vendite degli ultimi 7 giorni, ripartizione per categoria, prodotti top per consumo medio e movimenti per tipo.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💰</div>
+                <h2>Valore Magazzino</h2>
+                <p>Monitora il valore totale del magazzino direttamente dalla dashboard principale, con aggiornamento automatico ad ogni movimento registrato.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔗</div>
+                <h2>Integrazione ScadenzePro</h2>
+                <p>Sincronizzazione automatica con ScadenzePro ogni 30 secondi. Gestisci inventario e scadenze in un ecosistema unico, senza duplicare il lavoro.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🖥️</div>
+                <h2>Mobile e Web</h2>
+                <p>Stessa esperienza su tutti i dispositivi: app Flutter nativa per iOS e Android, web app React/Vite per chi lavora da desktop o tablet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
