@@ -11,6 +11,14 @@
 </head>
 <body>
 
+    <!-- Fixed background canvas -->
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Nav -->
     <nav class="nav">
         <div class="nav__inner">
             <span class="nav__logo grad-duo">KB</span>
@@ -21,23 +29,20 @@
         </div>
     </nav>
 
+    <!-- Hero -->
     <section class="hero">
-        <div class="blobs">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
-        </div>
         <div class="hero__content">
             <div class="hero__badge">App Developer</div>
             <h1 class="hero__title">Kevin<br><span class="grad-duo">Bettiga</span></h1>
             <p class="hero__sub">Sviluppo app <strong>mobile e web</strong> per la gestione operativa di piccole imprese. Specializzato in <strong>Flutter</strong> e <strong>React</strong>.</p>
             <a href="#apps" class="hero__arrow">
                 Le mie app
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
             </a>
         </div>
     </section>
 
+    <!-- Apps -->
     <section id="apps" class="apps-section">
         <div class="container">
             <p class="eyebrow">Portfolio</p>
@@ -65,7 +70,7 @@
                         </div>
                         <div class="app-card__cta">
                             Scopri Shelfie
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
                     </div>
                 </a>
@@ -90,7 +95,7 @@
                         </div>
                         <div class="app-card__cta">
                             Scopri StockFlow
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
                     </div>
                 </a>
@@ -99,6 +104,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer__inner">
             <span class="footer__logo grad-duo">KB</span>
@@ -113,7 +119,7 @@
     <script>
         const io = new IntersectionObserver(entries => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.12 });
         document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
     </script>
 </body>

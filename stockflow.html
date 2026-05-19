@@ -11,10 +11,16 @@
 </head>
 <body>
 
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="blob blob-1 o-strong"></div>
+        <div class="blob blob-2 p-soft"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <nav class="nav">
         <div class="nav__inner">
             <a href="index.html" class="nav__back">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
                 Portfolio
             </a>
             <span class="nav__logo grad-orange">StockFlow</span>
@@ -25,22 +31,17 @@
     </nav>
 
     <header class="app-hero">
-        <div class="blobs">
-            <div class="blob blob-1 tint-orange"></div>
-            <div class="blob blob-2 tint-purple"></div>
-            <div class="blob blob-3"></div>
-        </div>
-        <div class="app-hero__content">
+        <div class="app-hero__panel">
             <div class="app-hero__icon app-hero__icon--orange">📦</div>
             <h1 class="app-hero__title"><span class="grad-orange">StockFlow</span></h1>
-            <p class="app-hero__sub">Gestione magazzino dual-platform per piccole imprese. Disponibile come app Flutter per mobile e come web app React per desktop.</p>
+            <p class="app-hero__sub">Gestione magazzino dual-platform per piccole imprese. App Flutter per mobile e web app React per desktop — stessa esperienza ovunque.</p>
             <div class="app-hero__actions">
                 <a href="privacy-stockflow.html" class="app-hero__pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     Privacy Policy
                 </a>
                 <a href="index.html" class="app-hero__pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                     Tutte le app
                 </a>
             </div>
@@ -49,7 +50,7 @@
 
     <section class="features-section">
         <div class="container">
-            <p class="eyebrow">Funzionalità</p>
+            <p class="eyebrow eyebrow--orange">Funzionalità</p>
             <h2 class="section-title">Tutto quello che ti serve</h2>
             <p class="section-sub">Progettato per tenere il magazzino sempre sotto controllo</p>
 
@@ -67,7 +68,7 @@
                 <div class="feature-card feature-card--orange fade-up d3">
                     <div class="feature-icon">📊</div>
                     <h3>Report Avanzati</h3>
-                    <p>Grafici in tempo reale: andamento vendite degli ultimi 7 giorni, ripartizione per categoria, prodotti top per consumo medio e movimenti per tipo.</p>
+                    <p>Grafici in tempo reale: andamento vendite 7 giorni, ripartizione per categoria, prodotti top per consumo e movimenti per tipo.</p>
                 </div>
                 <div class="feature-card feature-card--orange fade-up d4">
                     <div class="feature-icon">💰</div>
@@ -82,7 +83,7 @@
                 <div class="feature-card feature-card--orange fade-up d6">
                     <div class="feature-icon">🖥️</div>
                     <h3>Mobile e Web</h3>
-                    <p>Stessa esperienza su tutti i dispositivi: app Flutter nativa per iOS e Android, e web app React/Vite per chi lavora da desktop o tablet.</p>
+                    <p>App Flutter nativa per iOS e Android, e web app React/Vite per desktop e tablet. Un solo prodotto, tutte le piattaforme.</p>
                 </div>
             </div>
         </div>
@@ -102,7 +103,7 @@
     <script>
         const io = new IntersectionObserver(entries => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.12 });
         document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
     </script>
 </body>
