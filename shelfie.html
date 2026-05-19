@@ -3,60 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shelfie — Il gestionale per le scadenze</title>
+    <title>Shelfie — Gestione scadenze per il tuo negozio</title>
+    <meta name="description" content="Shelfie è l'app per gestire le scadenze del tuo negozio. Notifiche automatiche, HACCP, multi-store e molto altro.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <nav class="back-nav">
-                <a href="index.html" class="back-link">← Torna al portfolio</a>
-            </nav>
-            <h1>Shelfie</h1>
-            <p class="subtitle">Il gestionale definitivo per il tuo negozio. Semplifica il controllo, riduci gli sprechi e ottimizza il riordino dei prodotti in modo intelligente.</p>
+
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                Portfolio
+            </a>
+            <span class="nav__logo grad-purple">Shelfie</span>
+            <div class="nav__links">
+                <a href="privacy-shelfie.html" class="nav__pill">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="app-hero">
+        <div class="blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2 tint-purple"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="app-hero__content">
+            <div class="app-hero__icon app-hero__icon--purple">⏱️</div>
+            <h1 class="app-hero__title"><span class="grad-purple">Shelfie</span></h1>
+            <p class="app-hero__sub">Il gestionale definitivo per le scadenze del tuo negozio. Semplifica il controllo, riduci gli sprechi e ottimizza il riordino dei prodotti in modo intelligente.</p>
+            <div class="app-hero__actions">
+                <a href="privacy-shelfie.html" class="app-hero__pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Privacy Policy
+                </a>
+                <a href="index.html" class="app-hero__pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Tutte le app
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="features-grid">
-            <div class="card">
-                <div class="icon">⏱️</div>
-                <h2>Controllo Scadenze Intelligente</h2>
-                <p>Ricevi notifiche automatiche 7 e 3 giorni prima della scadenza, più avvisi urgenti in giornata. Utilizza l'OCR integrato per leggere le date direttamente con la fotocamera.</p>
-            </div>
-            <div class="card">
-                <div class="icon">👥</div>
-                <h2>Gestione Team e Multi-Store</h2>
-                <p>Amministra più punti vendita da un unico account. Assegna ruoli di Admin o Dipendente e monitora ogni operazione grazie al Registro Azioni (Audit Log) dettagliato.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🌱</div>
-                <h2>Sostenibilità e Spreco Zero</h2>
-                <p>Trasforma la lotta agli sprechi in un vantaggio. Traccia i kg di cibo salvati, le emissioni di CO₂ evitate e sblocca badge speciali per il tuo impegno ambientale.</p>
-            </div>
-            <div class="card">
-                <div class="icon">📋</div>
-                <h2>Operatività e Conformità</h2>
-                <p>Mantieni standard elevati con le checklist per le ispezioni HACCP giornaliere. Imposta le soglie minime dei prodotti per ricevere avvisi automatici sui punti di riordino.</p>
-            </div>
-            <div class="card">
-                <div class="icon">📊</div>
-                <h2>Reportistica e Dati</h2>
-                <p>Ricevi report settimanali sulle tue performance, confronta i tuoi risultati con il benchmark di settore e importa/esporta facilmente i tuoi inventari in formato CSV o Excel.</p>
-            </div>
-            <div class="card">
-                <div class="icon">📱</div>
-                <h2>Tecnologia Avanzata</h2>
-                <p>Scansiona i codici a barre in un istante, sincronizza i dati in tempo reale e scegli il piano di abbonamento (Basic, Pro, Enterprise) più adatto alle dimensioni del tuo business.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <section class="features-section">
         <div class="container">
-            <p>&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <p class="eyebrow">Funzionalità</p>
+            <h2 class="section-title">Tutto quello che ti serve</h2>
+            <p class="section-sub">Progettato per semplificare la gestione quotidiana del negozio</p>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card--purple fade-up d1">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Controllo Scadenze Intelligente</h3>
+                    <p>Notifiche automatiche 7 e 3 giorni prima della scadenza, più avvisi urgenti in giornata. OCR integrato per leggere le date con la fotocamera.</p>
+                </div>
+                <div class="feature-card feature-card--purple fade-up d2">
+                    <div class="feature-icon">👥</div>
+                    <h3>Gestione Team e Multi-Store</h3>
+                    <p>Amministra più punti vendita da un unico account. Assegna ruoli Admin o Dipendente e monitora ogni operazione con il Registro Azioni dettagliato.</p>
+                </div>
+                <div class="feature-card feature-card--purple fade-up d3">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Sostenibilità e Spreco Zero</h3>
+                    <p>Traccia i kg di cibo salvati, le emissioni di CO₂ evitate e sblocca badge speciali per il tuo impegno ambientale.</p>
+                </div>
+                <div class="feature-card feature-card--purple fade-up d4">
+                    <div class="feature-icon">📋</div>
+                    <h3>Operatività e Conformità</h3>
+                    <p>Checklist per le ispezioni HACCP giornaliere e avvisi automatici al raggiungimento delle soglie minime di riordino.</p>
+                </div>
+                <div class="feature-card feature-card--purple fade-up d5">
+                    <div class="feature-icon">📊</div>
+                    <h3>Reportistica e Dati</h3>
+                    <p>Report settimanali sulle performance, benchmark di settore e import/export degli inventari in formato CSV o Excel.</p>
+                </div>
+                <div class="feature-card feature-card--purple fade-up d6">
+                    <div class="feature-icon">📱</div>
+                    <h3>Tecnologia Avanzata</h3>
+                    <p>Scansione codici a barre, sincronizzazione in tempo reale e piani di abbonamento flessibili (Basic, Pro, Enterprise).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__logo grad-duo">KB</span>
+            <p class="footer__copy">&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <div class="footer__links">
+                <a href="privacy-shelfie.html">Privacy Shelfie</a>
+                <a href="privacy-stockflow.html">Privacy StockFlow</a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    </script>
 </body>
 </html>

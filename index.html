@@ -4,67 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Bettiga — App Developer</title>
+    <meta name="description" content="Portfolio di Kevin Bettiga, sviluppatore di app mobile e web. Shelfie e StockFlow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero hero--portfolio">
-        <div class="container">
-            <div class="dev-badge">App Developer</div>
-            <h1>Kevin Bettiga</h1>
-            <p class="subtitle">Sviluppo app mobile e web per la gestione operativa di piccole imprese. Specializzato in Flutter e React.</p>
+
+    <nav class="nav">
+        <div class="nav__inner">
+            <span class="nav__logo grad-duo">KB</span>
+            <div class="nav__links">
+                <a href="#apps">App</a>
+                <a href="mailto:kevinbettiga99x@gmail.com" class="nav__pill">Contattami</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section class="section-header">
-            <h2>Le mie App</h2>
-            <p>Applicazioni disponibili su mobile e web</p>
-        </section>
-
-        <section class="apps-grid">
-            <a href="shelfie.html" class="app-card">
-                <div class="app-card__header app-card__header--purple">
-                    <div class="app-icon">⏱️</div>
-                    <div>
-                        <h3>Shelfie</h3>
-                        <span class="app-platform">📱 Mobile</span>
-                    </div>
-                </div>
-                <p class="app-card__desc">Il gestionale definitivo per le scadenze del tuo negozio. Riduci gli sprechi, mantieni la conformità HACCP e ottimizza il riordino dei prodotti.</p>
-                <div class="app-tags">
-                    <span class="tag tag--purple">Scadenze</span>
-                    <span class="tag tag--purple">Multi-store</span>
-                    <span class="tag tag--purple">Sostenibilità</span>
-                    <span class="tag tag--purple">HACCP</span>
-                </div>
-                <span class="app-link">Scopri di più →</span>
+    <section class="hero">
+        <div class="blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__badge">App Developer</div>
+            <h1 class="hero__title">Kevin<br><span class="grad-duo">Bettiga</span></h1>
+            <p class="hero__sub">Sviluppo app <strong>mobile e web</strong> per la gestione operativa di piccole imprese. Specializzato in <strong>Flutter</strong> e <strong>React</strong>.</p>
+            <a href="#apps" class="hero__arrow">
+                Le mie app
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
             </a>
+        </div>
+    </section>
 
-            <a href="stockflow.html" class="app-card">
-                <div class="app-card__header app-card__header--orange">
-                    <div class="app-icon">📦</div>
-                    <div>
-                        <h3>StockFlow</h3>
-                        <span class="app-platform">📱 Mobile + 🖥️ Web</span>
-                    </div>
-                </div>
-                <p class="app-card__desc">Gestione magazzino dual-platform per piccole imprese. Traccia movimenti, monitora le scorte e analizza le performance con grafici in tempo reale.</p>
-                <div class="app-tags">
-                    <span class="tag tag--orange">Inventario</span>
-                    <span class="tag tag--orange">Movimenti</span>
-                    <span class="tag tag--orange">Report</span>
-                    <span class="tag tag--orange">Flutter + React</span>
-                </div>
-                <span class="app-link">Scopri di più →</span>
-            </a>
-        </section>
-    </main>
-
-    <footer>
+    <section id="apps" class="apps-section">
         <div class="container">
-            <p>&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <p class="eyebrow">Portfolio</p>
+            <h2 class="section-title">Le mie App</h2>
+            <p class="section-sub">Applicazioni disponibili su mobile e web</p>
+
+            <div class="apps-grid">
+
+                <a href="shelfie.html" class="app-card app-card--shelfie fade-up d1">
+                    <div class="app-card__bar"></div>
+                    <div class="app-card__body">
+                        <div class="app-card__head">
+                            <div class="app-icon app-icon--purple">⏱️</div>
+                            <div class="app-platforms">
+                                <span class="platform-pill">📱 Mobile</span>
+                            </div>
+                        </div>
+                        <h3 class="app-card__name">Shelfie</h3>
+                        <p class="app-card__desc">Il gestionale definitivo per le scadenze del tuo negozio. Riduci gli sprechi, mantieni la conformità HACCP e ottimizza il riordino dei prodotti.</p>
+                        <div class="app-tags">
+                            <span class="tag tag--purple">Scadenze</span>
+                            <span class="tag tag--purple">Multi-store</span>
+                            <span class="tag tag--purple">HACCP</span>
+                            <span class="tag tag--purple">Sostenibilità</span>
+                        </div>
+                        <div class="app-card__cta">
+                            Scopri Shelfie
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="stockflow.html" class="app-card app-card--stockflow fade-up d2">
+                    <div class="app-card__bar"></div>
+                    <div class="app-card__body">
+                        <div class="app-card__head">
+                            <div class="app-icon app-icon--orange">📦</div>
+                            <div class="app-platforms">
+                                <span class="platform-pill">📱 Mobile</span>
+                                <span class="platform-pill">🖥️ Web</span>
+                            </div>
+                        </div>
+                        <h3 class="app-card__name">StockFlow</h3>
+                        <p class="app-card__desc">Gestione magazzino dual-platform per piccole imprese. Traccia movimenti, monitora le scorte e analizza le performance con grafici in tempo reale.</p>
+                        <div class="app-tags">
+                            <span class="tag tag--orange">Inventario</span>
+                            <span class="tag tag--orange">Movimenti</span>
+                            <span class="tag tag--orange">Report</span>
+                            <span class="tag tag--orange">Flutter + React</span>
+                        </div>
+                        <div class="app-card__cta">
+                            Scopri StockFlow
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__logo grad-duo">KB</span>
+            <p class="footer__copy">&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <div class="footer__links">
+                <a href="privacy-shelfie.html">Privacy Shelfie</a>
+                <a href="privacy-stockflow.html">Privacy StockFlow</a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    </script>
 </body>
 </html>

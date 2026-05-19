@@ -4,64 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StockFlow — Gestione magazzino mobile e web</title>
+    <meta name="description" content="StockFlow è l'app dual-platform per gestire il magazzino della tua impresa. Movimenti, report e valore scorte in tempo reale.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* StockFlow usa l'arancio come accento */
-        .hero { --hero-accent: var(--secondary); }
-        .card { --card-accent: var(--secondary); --card-icon-bg: var(--secondary-light); }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <nav class="back-nav">
-                <a href="index.html" class="back-link">← Torna al portfolio</a>
-            </nav>
-            <h1>StockFlow</h1>
-            <p class="subtitle">Gestione magazzino dual-platform per piccole imprese. Disponibile come app Flutter per mobile e come web app React per desktop.</p>
+
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                Portfolio
+            </a>
+            <span class="nav__logo grad-orange">StockFlow</span>
+            <div class="nav__links">
+                <a href="privacy-stockflow.html" class="nav__pill">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="app-hero">
+        <div class="blobs">
+            <div class="blob blob-1 tint-orange"></div>
+            <div class="blob blob-2 tint-purple"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="app-hero__content">
+            <div class="app-hero__icon app-hero__icon--orange">📦</div>
+            <h1 class="app-hero__title"><span class="grad-orange">StockFlow</span></h1>
+            <p class="app-hero__sub">Gestione magazzino dual-platform per piccole imprese. Disponibile come app Flutter per mobile e come web app React per desktop.</p>
+            <div class="app-hero__actions">
+                <a href="privacy-stockflow.html" class="app-hero__pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Privacy Policy
+                </a>
+                <a href="index.html" class="app-hero__pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Tutte le app
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="features-grid">
-            <div class="card">
-                <div class="icon">📦</div>
-                <h2>Gestione Inventario</h2>
-                <p>Organizza i prodotti per categoria e sottocategoria. Imposta quantità minime per ricevere avvisi automatici di riordino prima che le scorte si esauriscano.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🔄</div>
-                <h2>Movimenti Stock</h2>
-                <p>Registra carichi, scarichi, riordini e perdite in pochi tocchi. La dashboard mostra gli ultimi movimenti in tempo reale con data, tipo e quantità.</p>
-            </div>
-            <div class="card">
-                <div class="icon">📊</div>
-                <h2>Report Avanzati</h2>
-                <p>Grafici aggiornati in tempo reale: andamento vendite degli ultimi 7 giorni, ripartizione per categoria, prodotti top per consumo medio e movimenti per tipo.</p>
-            </div>
-            <div class="card">
-                <div class="icon">💰</div>
-                <h2>Valore Magazzino</h2>
-                <p>Monitora il valore totale del magazzino direttamente dalla dashboard principale, con aggiornamento automatico ad ogni movimento registrato.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🔗</div>
-                <h2>Integrazione ScadenzePro</h2>
-                <p>Sincronizzazione automatica con ScadenzePro ogni 30 secondi. Gestisci inventario e scadenze in un ecosistema unico, senza duplicare il lavoro.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🖥️</div>
-                <h2>Mobile e Web</h2>
-                <p>Stessa esperienza su tutti i dispositivi: app Flutter nativa per iOS e Android, web app React/Vite per chi lavora da desktop o tablet.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <section class="features-section">
         <div class="container">
-            <p>&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <p class="eyebrow">Funzionalità</p>
+            <h2 class="section-title">Tutto quello che ti serve</h2>
+            <p class="section-sub">Progettato per tenere il magazzino sempre sotto controllo</p>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card--orange fade-up d1">
+                    <div class="feature-icon">📦</div>
+                    <h3>Gestione Inventario</h3>
+                    <p>Organizza i prodotti per categoria e sottocategoria. Imposta quantità minime per ricevere avvisi automatici di riordino prima che le scorte si esauriscano.</p>
+                </div>
+                <div class="feature-card feature-card--orange fade-up d2">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Movimenti Stock</h3>
+                    <p>Registra carichi, scarichi, riordini e perdite in pochi tocchi. La dashboard mostra gli ultimi movimenti in tempo reale con data, tipo e quantità.</p>
+                </div>
+                <div class="feature-card feature-card--orange fade-up d3">
+                    <div class="feature-icon">📊</div>
+                    <h3>Report Avanzati</h3>
+                    <p>Grafici in tempo reale: andamento vendite degli ultimi 7 giorni, ripartizione per categoria, prodotti top per consumo medio e movimenti per tipo.</p>
+                </div>
+                <div class="feature-card feature-card--orange fade-up d4">
+                    <div class="feature-icon">💰</div>
+                    <h3>Valore Magazzino</h3>
+                    <p>Monitora il valore totale del magazzino direttamente dalla dashboard, con aggiornamento automatico ad ogni movimento registrato.</p>
+                </div>
+                <div class="feature-card feature-card--orange fade-up d5">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Integrazione Shelfie</h3>
+                    <p>Sincronizzazione automatica con Shelfie ogni 30 secondi. Gestisci inventario e scadenze in un ecosistema unico, senza duplicare il lavoro.</p>
+                </div>
+                <div class="feature-card feature-card--orange fade-up d6">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>Mobile e Web</h3>
+                    <p>Stessa esperienza su tutti i dispositivi: app Flutter nativa per iOS e Android, e web app React/Vite per chi lavora da desktop o tablet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__logo grad-duo">KB</span>
+            <p class="footer__copy">&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <div class="footer__links">
+                <a href="privacy-shelfie.html">Privacy Shelfie</a>
+                <a href="privacy-stockflow.html">Privacy StockFlow</a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    </script>
 </body>
 </html>
