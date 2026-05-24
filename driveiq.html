@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveIQ — Diagnostica veicoli offline-first con OBD2</title>
+    <meta name="description" content="DriveIQ è l'app per la diagnostica del tuo veicolo. OBD2 Bluetooth, AUTOCORE AI, GPS tracking e gestione garage, tutto offline.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="blob blob-1 r-strong"></div>
+        <div class="blob blob-2 r-soft"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__back">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                Portfolio
+            </a>
+            <span class="nav__logo grad-red">DriveIQ</span>
+            <div class="nav__links">
+                <a href="privacy-driveiq.html" class="nav__pill">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="app-hero">
+        <div class="app-hero__panel">
+            <div class="app-hero__icon app-hero__icon--red">🚗</div>
+            <h1 class="app-hero__title"><span class="grad-red">DriveIQ</span></h1>
+            <p class="app-hero__sub">Il meccanico virtuale nel tuo smartphone. Diagnostica OBD2 in tempo reale, intelligenza artificiale locale e GPS tracking — tutto senza connessione internet.</p>
+            <div class="app-hero__actions">
+                <a href="privacy-driveiq.html" class="app-hero__pill">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Privacy Policy
+                </a>
+                <a href="index.html" class="app-hero__pill">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Tutte le app
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="features-section">
+        <div class="container">
+            <p class="eyebrow eyebrow--red">Funzionalità</p>
+            <h2 class="section-title">Tutto quello che ti serve</h2>
+            <p class="section-sub">Progettato per chi vuole capire davvero cosa succede sotto il cofano</p>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card--red fade-up d1">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Connettività OBD2 Bluetooth</h3>
+                    <p>Connetti la tua OBD2 ELM327 via Bluetooth in pochi secondi. Leggi parametri motore in tempo reale: velocità, RPM, temperatura, batteria, carico, MAP turbo e molto altro.</p>
+                </div>
+                <div class="feature-card feature-card--red fade-up d2">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AUTOCORE AI — Meccanico Virtuale</h3>
+                    <p>Intelligenza artificiale completamente offline che analizza i parametri del veicolo, rileva anomalie e codici DTC, e suggerisce soluzioni concrete — zero cloud, zero dipendenze.</p>
+                </div>
+                <div class="feature-card feature-card--red fade-up d3">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Health Score Motore</h3>
+                    <p>Score da 0 a 100 che valuta la salute del motore in modo intelligente. Verde, arancione o rosso a seconda dello stato reale dei parametri e dei codici DTC attivi.</p>
+                </div>
+                <div class="feature-card feature-card--red fade-up d4">
+                    <div class="feature-icon">📍</div>
+                    <h3>GPS Tracking & Route</h3>
+                    <p>Traccia ogni percorso con mappa interattiva. Monitora distanza, velocità media, consumo carburante istantaneo e medio per ogni viaggio registrato.</p>
+                </div>
+                <div class="feature-card feature-card--red fade-up d5">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Garage Virtuale</h3>
+                    <p>Gestisci tutti i tuoi veicoli in un unico posto. Inserisci dati tecnici, foto, targa e tieni traccia delle manutenzioni con promemoria chilometrici personalizzati.</p>
+                </div>
+                <div class="feature-card feature-card--red fade-up d6">
+                    <div class="feature-icon">📄</div>
+                    <h3>Export PDF Report</h3>
+                    <p>Genera report professionali in PDF con health score, tabella codici DTC e warning AUTOCORE AI. Condividili direttamente con il meccanico in un tap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__logo grad-duo">KB</span>
+            <p class="footer__copy">&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <div class="footer__links">
+                <a href="privacy-shelfie.html">Privacy Shelfie</a>
+                <a href="privacy-stockflow.html">Privacy StockFlow</a>
+                <a href="privacy-driveiq.html">Privacy DriveIQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
