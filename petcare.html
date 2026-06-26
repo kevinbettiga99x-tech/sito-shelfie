@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare Assistant — App per la cura del tuo animale</title>
+    <meta name="description" content="PetCare Assistant: gestione completa di salute, alimentazione, promemoria e diario del tuo animale domestico. Offline-first, nessun account.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="blob blob-1 b-strong"></div>
+        <div class="blob blob-2 b-soft"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__back">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                Portfolio
+            </a>
+            <span class="nav__logo grad-blue">PetCare</span>
+            <div class="nav__links">
+                <a href="privacy-petcare.html" class="nav__pill">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="app-hero">
+        <div class="app-hero__panel">
+            <div class="app-hero__icon app-hero__icon--blue">🐾</div>
+            <h1 class="app-hero__title"><span class="grad-blue">PetCare</span><br>Assistant</h1>
+            <p class="app-hero__sub">Tutto quello che serve per il tuo animale, in un posto solo.<br>Salute, alimentazione, promemoria e diario — sempre con te, anche offline.</p>
+            <div class="app-hero__actions">
+                <span class="app-hero__pill">📱 Android</span>
+                <span class="app-hero__pill">🔒 100% Offline</span>
+                <span class="app-hero__pill">🆓 Nessun account</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <p class="eyebrow eyebrow--blue">Funzionalità</p>
+            <h2 class="section-title">Tutto per il tuo animale</h2>
+            <p class="section-sub">Un'app che impara dal tuo animale nel tempo</p>
+
+            <div class="features-grid">
+
+                <div class="feature-card feature-card--blue fade-up d1">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Diario Sanitario</h3>
+                    <p>Registra vaccinazioni, visite veterinarie, farmaci e antiparassitari. Cronologia completa sempre a portata di mano, con promemoria automatici per le scadenze.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d2">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Health Pattern Engine</h3>
+                    <p>Peso, sintomi, attività e razza vengono incrociati automaticamente. Se qualcosa esce dalla norma, l'app te lo segnala con una spiegazione chiara.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d3">
+                    <div class="feature-icon">🍖</div>
+                    <h3>Alimentazione & Brand Library</h3>
+                    <p>Scansiona l'etichetta del cibo con la fotocamera, cerca online o importa da CSV. Confronta i valori nutrizionali tra marche per scegliere il prodotto giusto.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d4">
+                    <div class="feature-icon">📅</div>
+                    <h3>Agenda & Promemoria</h3>
+                    <p>Promemoria precisi per farmaci, visite, bagni e ogni routine. Notifiche locali, nessun server necessario.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d5">
+                    <div class="feature-icon">📓</div>
+                    <h3>Diario & Attività</h3>
+                    <p>Tieni un diario delle giornate, registra le sessioni di allenamento e monitora l'attività fisica. Streak e obiettivi di benessere per mantenere le routine.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d6">
+                    <div class="feature-icon">🚨</div>
+                    <h3>Centro Emergenze</h3>
+                    <p>Guide di primo soccorso per 6 scenari d'urgenza, scheda d'emergenza dell'animale e accesso rapido ai veterinari salvati. FAB rosso sempre visibile.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d1">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Vista Famiglia</h3>
+                    <p>Gestisci più animali con più membri della famiglia. Esporta la scheda dog-sitter in un tap per lasciare tutte le informazioni necessarie a chi si prende cura dell'animale in tua assenza.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d2">
+                    <div class="feature-icon">💰</div>
+                    <h3>Spese & Scorte</h3>
+                    <p>Traccia le spese veterinarie e di prodotti. Monitora le scorte di cibo e farmaci con avviso automatico quando stanno per finire. Lista della spesa condivisibile.</p>
+                </div>
+
+                <div class="feature-card feature-card--blue fade-up d3">
+                    <div class="feature-icon">🌦️</div>
+                    <h3>Avvisi Ambientali</h3>
+                    <p>Meteo locale e avvisi su caldo, freddo e stagione parassiti personalizzati per la razza del tuo animale. Dati via Open-Meteo, nessuna registrazione richiesta.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy strip -->
+    <section style="position:relative;z-index:1;padding:0 28px 100px;">
+        <div style="max-width:700px;margin:0 auto;">
+            <div class="privacy-glass" style="display:flex;align-items:flex-start;gap:18px;">
+                <div style="font-size:28px;flex-shrink:0;margin-top:2px;">🔒</div>
+                <div>
+                    <h3 style="font-size:1rem;font-weight:700;color:var(--t1);margin-bottom:8px;">Privacy & dati locali</h3>
+                    <p style="color:var(--t2);font-size:.91rem;line-height:1.78;">
+                        Tutti i dati inseriti nell'app restano sul tuo dispositivo. Nessun account, nessun cloud, nessuna pubblicità.
+                        L'unica connessione a internet avviene per la ricerca meteo (Open-Meteo, anonima) e la ricerca marche (Open Food Facts, anonima) — entrambe opzionali e senza autenticazione.
+                    </p>
+                    <a href="privacy-petcare.html" style="display:inline-flex;align-items:center;gap:7px;margin-top:14px;color:var(--blue-2);font-size:.86rem;font-weight:600;transition:opacity .2s;" onmouseover="this.style.opacity='.7'" onmouseout="this.style.opacity='1'">
+                        Leggi la Privacy Policy completa
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__logo grad-duo">KB</span>
+            <p class="footer__copy">&copy; 2026 Kevin Bettiga. Tutti i diritti riservati.</p>
+            <div class="footer__links">
+                <a href="index.html">Portfolio</a>
+                <a href="privacy-petcare.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.10 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
