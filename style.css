@@ -353,7 +353,7 @@ a { text-decoration: none; color: inherit; }
     border-color: rgba(0,188,140,.5);
     box-shadow: var(--glass-inset), 0 0 48px rgba(0,188,140,.22), 0 24px 64px rgba(0,0,0,.5);
 }
-.app-card--festamix:hover {
+.app-card--nonhomai:hover {
     border-color: rgba(255,107,157,.5);
     box-shadow: var(--glass-inset), 0 0 48px rgba(255,107,157,.22), 0 24px 64px rgba(0,0,0,.5);
 }
@@ -365,7 +365,7 @@ a { text-decoration: none; color: inherit; }
 .app-card--driveiq   .app-card__bar { background: linear-gradient(90deg, var(--red), var(--red-2)); }
 .app-card--petcare   .app-card__bar { background: linear-gradient(90deg, var(--blue), var(--blue-2)); }
 .app-card--retail    .app-card__bar { background: linear-gradient(90deg, var(--green), var(--green-2)); }
-.app-card--festamix  .app-card__bar { background: linear-gradient(90deg, var(--pink), var(--pink-2)); }
+.app-card--nonhomai  .app-card__bar { background: linear-gradient(90deg, var(--pink), var(--pink-2)); }
 
 .app-card__body { padding: 34px 30px 30px; }
 .app-card__head {
@@ -449,7 +449,7 @@ a { text-decoration: none; color: inherit; }
 .app-card--driveiq   .app-card__cta { color: var(--red-2); }
 .app-card--petcare   .app-card__cta { color: var(--blue-2); }
 .app-card--retail    .app-card__cta { color: var(--green-2); }
-.app-card--festamix  .app-card__cta { color: var(--pink-2); }
+.app-card--nonhomai  .app-card__cta { color: var(--pink-2); }
 .app-card:hover .app-card__cta { gap: 14px; }
 
 /* ════════════════════════════════════════════════════
