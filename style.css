@@ -17,6 +17,9 @@
     --green:       #00BC8C;
     --green-2:     #34D9A0;
     --green-glow:  rgba(0,188,140,.45);
+    --pink:        #FF6B9D;
+    --pink-2:      #FF8CC0;
+    --pink-glow:   rgba(255,107,157,.45);
 
     --glass:         rgba(255,255,255,.07);
     --glass-hover:   rgba(255,255,255,.11);
@@ -108,6 +111,9 @@ a { text-decoration: none; color: inherit; }
 /* Retail Empire: green-dominant */
 .blob-1.g-strong { background: radial-gradient(circle at 40% 40%, rgba(0,188,140,.70), transparent 70%); }
 .blob-2.g-soft   { background: radial-gradient(circle at 60% 60%, rgba(52,217,160,.30), transparent 70%); }
+/* Festa Mix: pink-dominant */
+.blob-1.pk-strong { background: radial-gradient(circle at 40% 40%, rgba(255,107,157,.70), transparent 70%); }
+.blob-2.pk-soft   { background: radial-gradient(circle at 60% 60%, rgba(155,89,182,.35), transparent 70%); }
 
 @keyframes drift {
     from { transform: translate(0,0) scale(1); }
@@ -153,6 +159,12 @@ a { text-decoration: none; color: inherit; }
 }
 .grad-green {
     background: linear-gradient(135deg, var(--green), var(--green-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.grad-pink {
+    background: linear-gradient(135deg, var(--pink), var(--pink-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -341,6 +353,10 @@ a { text-decoration: none; color: inherit; }
     border-color: rgba(0,188,140,.5);
     box-shadow: var(--glass-inset), 0 0 48px rgba(0,188,140,.22), 0 24px 64px rgba(0,0,0,.5);
 }
+.app-card--festamix:hover {
+    border-color: rgba(255,107,157,.5);
+    box-shadow: var(--glass-inset), 0 0 48px rgba(255,107,157,.22), 0 24px 64px rgba(0,0,0,.5);
+}
 
 /* Gradient top bar */
 .app-card__bar { height: 2px; width: 100%; }
@@ -349,6 +365,7 @@ a { text-decoration: none; color: inherit; }
 .app-card--driveiq   .app-card__bar { background: linear-gradient(90deg, var(--red), var(--red-2)); }
 .app-card--petcare   .app-card__bar { background: linear-gradient(90deg, var(--blue), var(--blue-2)); }
 .app-card--retail    .app-card__bar { background: linear-gradient(90deg, var(--green), var(--green-2)); }
+.app-card--festamix  .app-card__bar { background: linear-gradient(90deg, var(--pink), var(--pink-2)); }
 
 .app-card__body { padding: 34px 30px 30px; }
 .app-card__head {
@@ -388,6 +405,11 @@ a { text-decoration: none; color: inherit; }
     border: 1px solid rgba(52,217,160,.25);
     box-shadow: 0 0 20px rgba(0,188,140,.2);
 }
+.app-icon--pink {
+    background: rgba(255,107,157,.18);
+    border: 1px solid rgba(255,140,192,.25);
+    box-shadow: 0 0 20px rgba(255,107,157,.2);
+}
 
 .app-platforms { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
 .platform-pill {
@@ -413,6 +435,7 @@ a { text-decoration: none; color: inherit; }
 .tag--red     { background: rgba(232,0,45,.18);    color: var(--red-2);     border: 1px solid rgba(232,0,45,.25); }
 .tag--blue    { background: rgba(59,125,221,.18);  color: var(--blue-2);    border: 1px solid rgba(59,125,221,.25); }
 .tag--green   { background: rgba(0,188,140,.18);   color: var(--green-2);   border: 1px solid rgba(0,188,140,.25); }
+.tag--pink    { background: rgba(255,107,157,.18); color: var(--pink-2);    border: 1px solid rgba(255,107,157,.25); }
 
 .app-card__cta {
     display: flex; align-items: center; gap: 8px;
@@ -426,6 +449,7 @@ a { text-decoration: none; color: inherit; }
 .app-card--driveiq   .app-card__cta { color: var(--red-2); }
 .app-card--petcare   .app-card__cta { color: var(--blue-2); }
 .app-card--retail    .app-card__cta { color: var(--green-2); }
+.app-card--festamix  .app-card__cta { color: var(--pink-2); }
 .app-card:hover .app-card__cta { gap: 14px; }
 
 /* ════════════════════════════════════════════════════
@@ -479,6 +503,11 @@ a { text-decoration: none; color: inherit; }
     background: rgba(0,188,140,.2);
     border: 1px solid rgba(52,217,160,.3);
     box-shadow: 0 0 32px rgba(0,188,140,.3);
+}
+.app-hero__icon--pink {
+    background: rgba(255,107,157,.2);
+    border: 1px solid rgba(255,140,192,.3);
+    box-shadow: 0 0 32px rgba(255,107,157,.3);
 }
 .app-hero__title {
     font-size: clamp(2.6rem, 7vw, 5rem);
@@ -556,8 +585,14 @@ a { text-decoration: none; color: inherit; }
     border-color: rgba(0,188,140,.4);
     box-shadow: var(--glass-inset), 0 0 32px rgba(0,188,140,.12), 0 12px 32px rgba(0,0,0,.4);
 }
+.feature-card--pink   .feature-icon { background: rgba(255,107,157,.18); border: 1px solid rgba(255,107,157,.25); }
+.feature-card--pink:hover {
+    border-color: rgba(255,107,157,.4);
+    box-shadow: var(--glass-inset), 0 0 32px rgba(255,107,157,.12), 0 12px 32px rgba(0,0,0,.4);
+}
 .eyebrow--blue  { color: var(--blue-2); }
 .eyebrow--green { color: var(--green-2); }
+.eyebrow--pink  { color: var(--pink-2); }
 
 .feature-card h3 { font-size: 1.02rem; font-weight: 700; color: var(--t1); margin-bottom: 9px; letter-spacing: -.01em; }
 .feature-card p  { font-size: .91rem; color: var(--t2); line-height: 1.78; }
